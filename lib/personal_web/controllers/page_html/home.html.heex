@@ -1,0 +1,17 @@
+<div class="md:p-0 p-10 md:grid md:grid-cols-7 mx-auto">
+  <div class="md:col-span-2" />
+  <div class="md:col-span-5 flex flex-col gap-20">
+    <header>
+      <h1>Ryan Zidago</h1>
+      <p>Product development</p>
+      <.link href={~p"/about-me/"}>About me</.link>
+    </header>
+    <div class="flex flex-col gap-8">
+      <div :for={post <- @posts}>
+        <.link href={~p"/posts/#{post.slug}/"}>
+          <%= post.date %> <%= post.title %>
+        </.link>
+      </div>
+    </div>
+  </div>
+</div>

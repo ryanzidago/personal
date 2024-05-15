@@ -1,0 +1,12 @@
+<div class="md:p-0 p-10 md:grid md:grid-cols-7">
+  <div class="md:col-span-2" />
+  <article class="md:col-span-3">
+    <header>
+      <h1><%= @post.title %></h1>
+    </header>
+    <section class="flex flex-col gap-4 text-justify">
+      <%= Phoenix.HTML.raw(@post.body) %>
+    </section>
+  </article>
+  <div class="md:col-span-2" />
+</div>

@@ -1,0 +1,15 @@
+  <nav class="flex flex-row gap-4">
+    <.link href={~p"/"}>Home</.link>
+    <.link href={~p"/about-me"}>About me</.link>
+  </nav>
+<main class="">
+  <div class="">
+    <.flash_group flash={@flash} />
+    <%= @inner_content %>
+  </div>
+</main>
+<footer class="flex flex-row justify-center items-center">
+  <div class="">
+    <PersonalWeb.Components.AboutMe.render />
+  </div>
+</footer>

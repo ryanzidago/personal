@@ -1,0 +1,36 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+  @apply bg-slate-800 antialiased text-slate-300
+}
+
+/* This file is for your main application CSS */
+h1 {
+  @apply text-4xl font-bold pt-20 pb-10 drop-shadow-lg;
+}
+
+h2 {
+  @apply text-3xl font-semibold pt-10 pb-2 drop-shadow-lg;
+}
+
+p {
+  @apply text-lg drop-shadow;
+}
+
+code {
+  @apply p-2 font-medium font-mono  bg-[#22272e] rounded-md drop-shadow-lg;
+}
+
+li {
+  @apply list-item list-disc list-inside;
+}
+
+article a {
+  @apply underline
+}
+
+a {
+  @apply underline
+}
